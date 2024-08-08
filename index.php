@@ -1,9 +1,15 @@
-<?php
-declare(strict_types=1);
-// header('Location: http://www.GOOGLE.com/');
-$name = 'TestCookie';
-$value = 'value_of_cookie';
-setcookie($name, $value);
-
-echo "Hi! I\'m a veb server <br/>" ;
-echo 'Hi';
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+    <ul>
+        <li><a href="pageErrorNotFound.php">Страница 404</a></li>
+        <li><a href="pageDownload.php?text=Привет, мир!">Скачать файл</a></li>
+        <li><a href="pageSession.php">Страница сессии</a></li>
+        <li><a href="pageCounter.php">Счётчик открытий</a></li>
+    </ul>
+</body>
+</html>
