@@ -24,12 +24,10 @@ $_SESSION['visit_count']++;
 echo "Страница была открыта " . $_SESSION['visit_count'] . " раз.";
 
 // Проверяем, кратно ли количество посещений трём
-if ($_SESSION['visit_count'] % 3 == 0) {
-    // Если кратно, выполняем редирект на страницу 'pageCounter.php'
-    header('Location: pageCounter.php');
+if ($_SESSION['visit_count'] % 3 == 0) {header('Location: pageCounter.php');// Если кратно, выполняем редирект на страницу 'pageCounter.php'
     exit();
 }
 
-// echo '<pre>';
-// print_r($_SESSION);
-// echo '</pre>';
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
